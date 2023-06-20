@@ -1,14 +1,13 @@
-#include <unistd.h>
+#include "main.h"
 
 /**
- * _putchar - writes the character c to stdout
- * @c: The character to print
- *
- * Return: 1(success)
- * On error, 0 is return.
- *
+ * _isalpha - check for lower case letter
+ * @c : character to check
+ * Return:0 or 1
  */
-int _putchar(char c)
+
+int _isalpha(int c)
 {
-	return (write(1, &c, 1));
+	return ((c >= 97 && c <= 122) || (c >= 65 && c <= 90));
+
 }
