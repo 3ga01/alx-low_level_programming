@@ -13,6 +13,7 @@ void print_rev(char *s)
 {
 	int len;
 	int i;
+	char *c;
 
 	len = strlen(s);
 
@@ -20,5 +21,5 @@ void print_rev(char *s)
 	{
 		putchar(s[i]);
 	}
-	putchar('\0');
+	putchar('\n');
 }
