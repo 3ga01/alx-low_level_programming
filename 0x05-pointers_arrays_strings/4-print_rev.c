@@ -28,6 +28,6 @@ void print_rev(char *s)
 
 		first++;
 		last--;
-		_putchar (s[first]);
+		putchar (s[first]);
 	}
 }
