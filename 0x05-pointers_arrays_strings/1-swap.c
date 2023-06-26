@@ -6,6 +6,7 @@
  * @a: Memory Address oof first value
  * @b: Memory Address of second value
  *
+ * Return: void(succes)
  */
 void swap_int(int *a, int *b)
 {
