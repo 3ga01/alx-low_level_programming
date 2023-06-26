@@ -10,5 +10,23 @@
  */
 void print_rev(char *s)
 {
-	rev(s);
+	int len;
+	int first;
+	int tmp;
+	int last;
+
+	len = strlen(s);
+	first = 0;
+	last = len - 1;
+
+	while (first < len)
+	{
+		tmp = s[first];
+		s[first] = s[last];
+		s[last] = tmp;
+
+		first++;
+		last--;
+	}
+	puts(s);
 }
