@@ -20,7 +20,7 @@ void print_rev(char *s)
 	first = 0;
 	last = len - 1;
 
-	while (first < len)
+	while (first < last)
 	{
 		tmp = s[first];
 		s[first] = s[last];
