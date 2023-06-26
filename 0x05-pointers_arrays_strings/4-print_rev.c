@@ -13,7 +13,6 @@ void print_rev(char *s)
 {
 	int len;
 	int i;
-	char *c;
 
 	len = strlen(s);
 
