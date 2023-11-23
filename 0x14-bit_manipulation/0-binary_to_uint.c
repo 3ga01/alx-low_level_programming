@@ -10,25 +10,25 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int i = 0;
-	int a = 0;
+	unsigned int result = 0;
 
 	if (b == NULL)
 	{
 		return (0);
 	}
-	while (b[a] != '\0')
+	while (*b != '\0')
 	{
-		if (!(b[a] >= 48 && b[a] <= 49))
+		char current = *b;
+
+		if (current != '0' && current !='1')
 		{
-			return (0);
+			return 0;
 		}
-		else
-		{
-			i <<= 1;
-			i += b[a] - '0';
-		}
-		a++;
+
+		result <<= 1;
+		result += (current - '0');
+
+		b++;
 	}
-	return (i);
+	return result;
 }
