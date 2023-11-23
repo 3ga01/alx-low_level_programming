@@ -20,9 +20,9 @@ unsigned int binary_to_uint(const char *b)
 	{
 		char current = *b;
 
-		if (current != '0' && current !='1')
+		if (current != '0' && current != '1')
 		{
-			return 0;
+			return (0);
 		}
 
 		result <<= 1;
@@ -30,5 +30,5 @@ unsigned int binary_to_uint(const char *b)
 
 		b++;
 	}
-	return result;
+	return (result);
 }
